@@ -1,0 +1,21 @@
+p {
+  background-color:lightgreen;
+  padding: 20px;
+}
+
+h1 {
+  background-color: lightcoral; text-align: center; font-size: 30px;display: block;
+}
+
+footer {
+  width: 800px; background-color: lightslategrey;color:white; display: block;text-align: center;
+}
+
+li {
+  width: 125px; display: inline-block;
+}
+
+img { 
+  width: 200px;
+}
+
