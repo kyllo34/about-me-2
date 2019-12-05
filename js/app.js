@@ -7,23 +7,23 @@ console.log('user\'s name was' + userName);
 
 var lowerCaseUsername = userName.toLowerCase();
 if(lowerCaseUsername === 'susana') {
-  alert('welcome back, you beautiful' + userName);
+  alert('welcome back' + userName);
 } else {
   alert('Welcome to my site');
 }
 
-var userLikeSite = prompt('do you like my site?'); 
-var LowerCaseUserLikeSite = userLikeSite.toLowerCase();
-if (LowerCaseUserLikeSite === 'no') {
-  alert(' maybe next time ');
+var userLikeSite = prompt('do you like my site?');
+var lowerCaseUserLikeSite = userLikeSite.toLowerCase();
+if (lowerCaseUserLikeSite === 'no') {
+  alert(' Im sad, oh well ');
 } else {
   alert('thank you');
   console.log('user like me site');
 }
 
 var userLikeDogs = prompt('do you like dogs?');
-var LowerCaseUserLikeDogs = userLikeDogs.toLowerCase();
-if (LowerCaseUserLikeDogs === 'no') {
+var lowerCaseUserLikeDogs = userLikeDogs.toLowerCase();
+if (lowerCaseUserLikeDogs === 'no') {
   alert ('oh no');
 }else {
   alert('me too');
@@ -31,17 +31,17 @@ if (LowerCaseUserLikeDogs === 'no') {
 }
 
 var userLikeTravel = prompt('do you like to travel?');
-var LowerCaseUserLikeTravel = userLikeTravel.toLowerCase();
-if(LowerCaseUserLikeTravel === 'no') {
-  alert('you will love it');
+var lowerCaseUserLikeTravel = userLikeTravel.toLowerCase();
+if(lowerCaseUserLikeTravel === 'no') {
+  alert('you should give it a try');
 }else {
-  alert('I love to travel too and cant wait for the next adventure');
+  alert('I love to travel too and I cant wait for the next adventure');
   console.log(' user like to travel');
 }
 
 var userLiveSeattle = prompt ('do you live in Seattle?');
-var LowerCaseUserLiveSeattle = userLiveSeattle.toLowerCase();
-if (LowerCaseUserLiveSeattle === 'no') {
+var lowerCaseUserLiveSeattle = userLiveSeattle.toLowerCase();
+if (lowerCaseUserLiveSeattle === 'no') {
   alert('you should come and visit Seattle, its a lot of cool stuff to do');
 }else{
   alert('I love Seattle, even the rain');
@@ -49,6 +49,34 @@ if (LowerCaseUserLiveSeattle === 'no') {
 }
 
 
-alert ('thank you for visited my site, ' + userName + 'Have a wonderful day');
+alert ('thank you for visited my site , ' + userName + 'Have a wonderful day');
 
 
+//help from Andrew
+
+var ageGuess = prompt('how old do you think I am?');
+
+var ageAnswer = Math.ceil (Math.random() * 39);
+for (var i = 0; i <4; i++) {
+if (ageGuess < ageAnswer) {
+  ageGuess = prompt('too high');
+}
+else if (ageGuess > ageAnswer); {
+ageAnswer = prompt('too low');
+}else{
+  alert ('correct');
+  score++;
+  i=4;
+}
+}
+
+
+
+
+
+
+
+
+
+
+    
